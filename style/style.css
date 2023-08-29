@@ -159,15 +159,7 @@ header {
     border-radius: 10px;
 }
 
-/* Estilos para el pie de página */
-footer {
-  margin-top: 30px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
 
-}
 
 /* Estilos para la sección de héro */
 .hero {
@@ -255,16 +247,20 @@ footer {
 }
 
 /* Footer Section */
-footer{ background: black; 
-  margin-top: 1.5rem;
-}
-
 
 .footer{
 	padding: 2.5rem;
-	color:gray;
 	font-size: 1.2rem;
+  background: black; 
+  margin-top: 1.5rem;
+  border-radius: 5px;
+  margin-top: 30px;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+
 }
+
 .footer #secundario a{ color: #acacac; }
 /* Estilos para la barra de búsqueda */
 .search {

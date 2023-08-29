@@ -21,7 +21,6 @@ btnCart.addEventListener('click', ()=> {
         
 }
 
-
 )
 
 /* When the user clicks on the button, 
