@@ -1,0 +1,40 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Sección Acerca de */
+.about-section {
+    display: flex;
+    justify-content: center; /* Centrar las columnas horizontalmente */
+    padding: 4rem 0;
+    background-color: #f4f4f4;
+}
+
+.about-content {
+    display: flex;
+    gap: 20px; /* Espacio entre las columnas */
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar las columnas dentro de la sección */
+}
+
+.item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    flex: 1; /* Hacer que las columnas tengan igual ancho */
+}
+
+.info-product {
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-product h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,296 @@
+*::after,
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1200px; /* Ancho máximo del contenedor principal */
+    font-family: 'Lato';
+ 
+}
+/* Estilos para el logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 40px; /* Ajusta el ancho del logo según tus necesidades */
+  margin-right: 10px; /* Espaciado entre el logo y el texto */
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: large;
+}
+
+/* Estilos para la barra de navegación */
+#nav {
+  line-height: 30px;
+  background-color: black;
+  float: left;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#nav li {
+  padding: 8px 0 8px 16px;
+  text-decoration: none;
+  float: right;
+}
+
+#nav li a {
+  padding: 2px 7px 2px 7px;
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  margin-right: 10px;
+}
+/* Estilos para el video en la sección del héroe */
+.hero-video {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-video video {
+  width: 100%; /* Asegura que el video ocupe todo el ancho del contenedor */
+  height: auto; /* La altura se ajusta automáticamente según el ancho */
+}
+
+
+/* Estilos para el submenu */
+#nav .dropdown {
+  position: relative;
+}
+
+#nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+#nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#nav .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+#nav .dropdown-content a:hover {
+  background-color: #555;
+}
+
+/* Estilos para el carrusel */
+.carousel {
+    width: 100%; /* El carrusel ocupará todo el ancho del contenedor */
+    margin: 10px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.slide-left,
+.slide-right {
+    font-size: 24px;
+    position: absolute;
+    background: white;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.slide-left {
+    left: 10px;
+}
+
+.slide-right {
+    right: 10px;
+}
+
+.carousel-item-wrapper {
+    display: flex;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.carousel-item {
+    min-width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px; /* Igual al ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el encabezado */
+    
+}
+
+/* Estilos para el contenedor de productos */
+.container-items {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item {
+    border-radius: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+  margin-top: 30px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+}
+
+/* Estilos para la sección de héro */
+.hero {
+  background-color: #f2f2f2;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  display: block;
+  margin-top: 40px;
+  background-color: #333;
+  color: #fff;
+  padding: 8px 16px; /* Ajusta el tamaño del botón (disminuye padding) */
+  font-size: 14px; /* Ajusta el tamaño del texto del botón (disminuye font-size) */
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero .btn:hover {
+  background-color: #555;
+}
+
+/* Items Section */
+.container-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.5s;
+}
+
+.item:hover img {
+    transform: scale(1.2);
+}
+
+.info-product {
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+/* Footer Section */
+footer{ background: black; 
+  margin-top: 1.5rem;
+}
+
+
+.footer{
+	padding: 2.5rem;
+	color:gray;
+	font-size: 1.2rem;
+}
+.footer #secundario a{ color: #acacac; }
+/* Estilos para la barra de búsqueda */
+.search {
+  position: relative;
+  padding: 10px;
+  float: right;
+  margin-top: 20px; /* Espaciado desde la sección anterior */
+}
+
+.search input[type="search"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 220px; /* Ajusta el ancho de la barra de búsqueda */
+}
+
+.search input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.search input[type="submit"]:hover {
+  background-color: #555;
+}

@@ -1,0 +1,81 @@
+/* Estilos generales para el contenedor */
+.contact-container {
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilos para el título */
+.contact-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-title h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+/* Estilos para la información */
+.contact-info {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Estilos para la imagen */
+.contact-image {
+    flex: 1;
+    text-align: center;
+}
+
+/* Estilos para el formulario */
+.contact-form {
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+.form-input,
+.form-textarea {
+    flex: 1;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #5b5959;
+    border-radius: 4px;
+    background: white;
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+.form-submit {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.form-submit:hover {
+    background-color: #555;
+}

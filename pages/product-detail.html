@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto</title>
+    <script src="./detail-product.js"></script>
+    <link rel="stylesheet" href="../style/producto-detalle.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="nav">
+            <div class="logo">
+                <img src="../images/logo.png" alt="Logo" class="logo-img">
+                <a class="active" href="#">Shoes</a>
+            </div>
+            <ul>
+                <li><a href="../pages/contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Colecciones</a>
+                    <div class="dropdown-content">
+                        <a href="#">Hombre</a>
+                        <a href="#">Mujer</a>
+                    </div>
+                    </li>
+                <li><a href="../pages/About.html">About</a></li>
+                <li><a href="../index.html">Home</a></li>
+                
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="product-details">
+        <div class="product-images">
+            <img id="product-image" src="" alt="Producto Imagen">
+        </div>
+        <div class="product-info">
+            <h1 id="product-name">Nombre del Producto</h1>
+            <p class="price">$180.000</p>
+            <p class="description">Descripción del producto aquí...</p>
+            <label for="size">Talla:</label>
+            <select id="size">
+                <option value="small">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+            </select>
+            <button class="buy-button">Añadir al carrito</button>
+        </div>
+    </section> 
+    
+    
+    
+    
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="four columns u-pull-left">
+                    Copyright &copy;shoes 2023.<br>Designed by EAN
+                </div>
+                <div class="eight columns u-pull-right">
+                    <nav id="secundario">
+                        <a class="enlace" href="../index.html">Home /</a>
+                        <a class="enlace" href="../pages/contact.html">Support /</a>
+                        <a class="enlace" href="#">Terms and Conditions /</a>
+                        <a class="enlace" href="#">Faqs /</a>
+                        <a class="enlace" href="../pages/contact.html">Contact us</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
